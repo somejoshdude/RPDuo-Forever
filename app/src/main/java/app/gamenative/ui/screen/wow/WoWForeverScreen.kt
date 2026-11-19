@@ -1175,8 +1175,8 @@ private data class GpuProfile(val driver: String, val tuDebug: String, val scree
             // Snapdragon 865 / Adreno 650 got the Adreno 740's 1080p. Turnip drives the a6xx family; 720p, conservative. UNTESTED on a Lite
             GpuProfile(DEFAULT_DRIVER, "noconform", "1280x720", "Adreno 650", "Thor Lite: Snapdragon 865 / Adreno 650 (untested)")
         } else {
-            GpuProfile(DEFAULT_DRIVER, "noconform", "1920x1080", "Adreno 740", "Snapdragon 8 Series / Adreno 740")
-        }
+        GpuProfile(ADRENO_8XX_DRIVER, "noconform", "1920x1080", "Adreno 722", "Retroid Pocket Duo / Adreno 722")
+    }
 
         private fun isThorLite(context: Context): Boolean =
             runCatching { GPUInformation.isAdreno6xx(context) }.getOrDefault(false) || com.jrees.wowcompanion.DeviceTier.isLite()
