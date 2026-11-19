@@ -1319,7 +1319,7 @@ private fun containerConfig(gameRoot: File, gpu: GpuProfile, executablePath: Str
 
 private fun installBundledComponents(context: Context, onStatus: (String) -> Unit) {
     installDriver(context, DEFAULT_DRIVER, "turnip-wow-scheduler-test.zip", onStatus)
-    installDriver(context, ADRENO_8XX_DRIVER, "turnip-V32-RP6sched.zip", onStatus)
+    installDriver(context, ADRENO_8XX_DRIVER, "turnip_faux123_v1.2.10.adpkg.zip", onStatus)
 
     val protonDir = File(ImageFs.getSharedProtonDir(context), PROTON_VERSION)
     if (!File(protonDir, "profile.json").exists() || !File(protonDir, "bin/wine").exists()) {
