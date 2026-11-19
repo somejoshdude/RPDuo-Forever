@@ -19,8 +19,8 @@ for f in "${FILES[@]}"; do
         cp "$1/$f" "$DEST/$f"
         echo "copied $f"
     else
-        if [ "$f" = "turnip_faux123_v1.2.3.adpkg" ]; then
-            curl -fL --retry 3 -o "$DEST/$f.part" "https://github.com/faux123/turnip-faux123-driver/releases/download/v1.2.3/turnip_faux123_v1.2.3.adpkg"
+        if [ "$f" = "turnip_faux123_v1.2.10.adpkg.zip" ]; then
+            curl -fL --retry 3 -o "$DEST/$f.part" "https://github.com/faux123/turnip-faux123-driver/releases/download/v1.2.10/turnip_faux123_v1.2.10.adpkg.zip"
         else
             curl -fL --retry 3 -o "$DEST/$f.part" "$RELEASE_URL/$f"
         fi
