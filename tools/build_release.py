@@ -16,7 +16,7 @@ COMPONENT_NAMES = (
     "proton-11.0-90624-arm64ec.wcp",
     "dxvk-2.4.1-wow-aarch64-test.wcp",
     "turnip-wow-scheduler-test.zip",
-    "turnip-V32-RP6sched.zip",
+    "turnip_faux123_v1.2.10.adpkg.zip",
 )
 COMPONENT_PREFIX = "assets/bundled_components/"
 
